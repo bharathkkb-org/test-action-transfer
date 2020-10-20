@@ -7,7 +7,7 @@ on:
 
 jobs:
   gcloud:
-    name: test-gcloud-action
+    name: test-gcloud-action-in-new-org
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

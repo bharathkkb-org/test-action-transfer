@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches:    
+      - main
+
+jobs:
+  gcloud:
+    name: test-gcloud-action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: bharathkkb-org/github-actions/setup-gcloud@master # Set up ADC for credentials
